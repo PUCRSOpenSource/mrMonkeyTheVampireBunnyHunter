@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:7481b81c554f06c1c5d75d591826cf3c:2c92d23b4107670130f76dfd7f162e5f:7911c030e11563ad887cc40e804ac2b4$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="charlotte-sprite.png" width="1616" height="107">
+    <sprite n="slice01_01.png" x="2" y="2" w="21" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice02_02.png" x="25" y="2" w="21" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice03_03.png" x="48" y="2" w="21" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice04_04.png" x="71" y="2" w="21" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice05_05.png" x="94" y="2" w="21" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice06_06.png" x="117" y="2" w="21" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice07_07.png" x="140" y="2" w="22" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice08_08.png" x="164" y="2" w="23" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice09_09.png" x="189" y="2" w="22" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice100_100.png" x="213" y="2" w="32" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice101_@.png" x="247" y="2" w="27" h="48" pX="0.5" pY="0.5"/>
+    <sprite n="slice102_@.png" x="276" y="2" w="29" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice103_@.png" x="307" y="2" w="21" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice104_@.png" x="330" y="2" w="22" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice105_@.png" x="354" y="2" w="41" h="21" pX="0.5" pY="0.5"/>
+    <sprite n="slice106_@.png" x="397" y="2" w="44" h="19" pX="0.5" pY="0.5"/>
+    <sprite n="slice107_@.png" x="443" y="2" w="25" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="slice108_@.png" x="470" y="2" w="33" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="slice109_@.png" x="505" y="2" w="25" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="slice10_10.png" x="532" y="2" w="23" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice110_@.png" x="557" y="2" w="31" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="slice11_11.png" x="590" y="2" w="21" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice12_12.png" x="613" y="2" w="21" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice13_13.png" x="636" y="2" w="23" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice14_14.png" x="661" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice15_15.png" x="687" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice16_16.png" x="713" y="2" w="25" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice17_17.png" x="740" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice18_18.png" x="766" y="2" w="23" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice19_19.png" x="791" y="2" w="26" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="slice20_20.png" x="819" y="2" w="23" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="slice21_21.png" x="844" y="2" w="26" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="slice22_22.png" x="872" y="2" w="25" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice23_23.png" x="899" y="2" w="19" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice24_24.png" x="920" y="2" w="21" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice25_25.png" x="943" y="2" w="44" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="slice26_26.png" x="989" y="2" w="28" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="slice27_27.png" x="1019" y="2" w="28" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice28_28.png" x="1049" y="2" w="29" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="slice29_29.png" x="1080" y="2" w="27" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice30_30.png" x="1109" y="2" w="44" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="slice31_31.png" x="1155" y="2" w="28" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="slice32_32.png" x="1185" y="2" w="44" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice33_33.png" x="1231" y="2" w="29" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="slice34_34.png" x="1262" y="2" w="44" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="slice35_35.png" x="1308" y="2" w="25" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="slice36_36.png" x="1335" y="2" w="30" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="slice37_37.png" x="1367" y="2" w="44" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="slice38_38.png" x="1413" y="2" w="25" h="48" pX="0.5" pY="0.5"/>
+    <sprite n="slice39_39.png" x="1440" y="2" w="28" h="33" pX="0.5" pY="0.5"/>
+    <sprite n="slice40_40.png" x="1470" y="2" w="27" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="slice41_41.png" x="1499" y="2" w="33" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice42_42.png" x="1534" y="2" w="44" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="slice43_43.png" x="1580" y="2" w="34" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice44_44.png" x="2" y="56" w="31" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="slice45_45.png" x="35" y="56" w="26" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice46_46.png" x="63" y="56" w="25" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice47_47.png" x="90" y="56" w="27" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice48_48.png" x="119" y="56" w="22" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice49_49.png" x="143" y="56" w="22" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice50_50.png" x="167" y="56" w="27" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice51_51.png" x="196" y="56" w="22" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice52_52.png" x="220" y="56" w="22" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice53_53.png" x="244" y="56" w="22" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice54_54.png" x="268" y="56" w="25" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice55_55.png" x="295" y="56" w="25" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice56_56.png" x="322" y="56" w="26" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice57_57.png" x="350" y="56" w="23" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice58_58.png" x="375" y="56" w="21" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice59_59.png" x="398" y="56" w="27" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice60_60.png" x="427" y="56" w="29" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="slice61_61.png" x="458" y="56" w="25" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="slice62_62.png" x="485" y="56" w="24" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice63_63.png" x="511" y="56" w="27" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice64_64.png" x="540" y="56" w="28" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice65_65.png" x="570" y="56" w="26" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice66_66.png" x="598" y="56" w="23" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice67_67.png" x="623" y="56" w="27" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="slice68_68.png" x="652" y="56" w="23" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice69_69.png" x="677" y="56" w="28" h="49" pX="0.5" pY="0.5"/>
+    <sprite n="slice70_70.png" x="707" y="56" w="22" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="slice71_71.png" x="731" y="56" w="25" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="slice72_72.png" x="758" y="56" w="26" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="slice73_73.png" x="786" y="56" w="25" h="27" pX="0.5" pY="0.5"/>
+    <sprite n="slice74_74.png" x="813" y="56" w="25" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="slice75_75.png" x="840" y="56" w="23" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="slice76_76.png" x="865" y="56" w="24" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="slice77_77.png" x="891" y="56" w="25" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="slice78_78.png" x="918" y="56" w="24" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="slice79_79.png" x="944" y="56" w="24" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="slice80_80.png" x="970" y="56" w="30" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice81_81.png" x="1002" y="56" w="24" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice82_82.png" x="1028" y="56" w="29" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="slice83_83.png" x="1059" y="56" w="27" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice84_84.png" x="1088" y="56" w="30" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice85_85.png" x="1120" y="56" w="26" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice86_86.png" x="1148" y="56" w="29" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="slice87_87.png" x="1179" y="56" w="24" h="49" pX="0.5" pY="0.5"/>
+    <sprite n="slice88_88.png" x="1205" y="56" w="34" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="slice89_89.png" x="1241" y="56" w="24" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="slice90_90.png" x="1267" y="56" w="24" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice91_91.png" x="1293" y="56" w="34" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="slice92_92.png" x="1329" y="56" w="26" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice93_93.png" x="1357" y="56" w="34" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="slice94_94.png" x="1393" y="56" w="27" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice95_95.png" x="1422" y="56" w="34" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="slice96_96.png" x="1458" y="56" w="21" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice97_97.png" x="1481" y="56" w="31" h="49" pX="0.5" pY="0.5"/>
+    <sprite n="slice98_98.png" x="1514" y="56" w="34" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="slice99_99.png" x="1550" y="56" w="31" h="49" pX="0.5" pY="0.5"/>
+</TextureAtlas>

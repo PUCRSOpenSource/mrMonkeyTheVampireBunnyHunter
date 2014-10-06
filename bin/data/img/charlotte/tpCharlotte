@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data version="1.0">
+    <struct type="Settings">
+        <key>fileFormatVersion</key>
+        <int>3</int>
+        <key>texturePackerVersion</key>
+        <string>3.5.1</string>
+        <key>fileName</key>
+        <string>/home/matthias/charlotte</string>
+        <key>autoSDSettings</key>
+        <array>
+            <struct type="AutoSDSettings">
+                <key>scale</key>
+                <double>1</double>
+                <key>extension</key>
+                <string></string>
+                <key>spriteFilter</key>
+                <string></string>
+                <key>acceptFractionalValues</key>
+                <false/>
+                <key>maxTextureSize</key>
+                <QSize>
+                    <key>width</key>
+                    <int>-1</int>
+                    <key>height</key>
+                    <int>-1</int>
+                </QSize>
+            </struct>
+        </array>
+        <key>allowRotation</key>
+        <false/>
+        <key>premultiplyAlpha</key>
+        <false/>
+        <key>shapeDebug</key>
+        <false/>
+        <key>dpi</key>
+        <uint>72</uint>
+        <key>dataFormat</key>
+        <string>xml</string>
+        <key>textureFileName</key>
+        <filename>charlotte-sprite.png</filename>
+        <key>flipPVR</key>
+        <false/>
+        <key>pvrCompressionQuality</key>
+        <enum type="SettingsBase::PvrCompressionQuality">PVR_QUALITY_NORMAL</enum>
+        <key>etc1CompressionQuality</key>
+        <enum type="SettingsBase::Etc1CompressionQuality">ETC1_QUALITY_HIGH_PERCEPTUAL</enum>
+        <key>dxtCompressionMode</key>
+        <enum type="SettingsBase::DxtCompressionMode">DXT_PERCEPTUAL</enum>
+        <key>jxrColorFormat</key>
+        <enum type="SettingsBase::JpegXrColorMode">JXR_YUV444</enum>
+        <key>jxrTrimFlexBits</key>
+        <uint>0</uint>
+        <key>jxrCompressionLevel</key>
+        <uint>0</uint>
+        <key>ditherType</key>
+        <enum type="SettingsBase::DitherType">NearestNeighbour</enum>
+        <key>backgroundColor</key>
+        <uint>0</uint>
+        <key>libGdx</key>
+        <struct type="LibGDX">
+            <key>filtering</key>
+            <struct type="LibGDXFiltering">
+                <key>x</key>
+                <enum type="LibGDXFiltering::Filtering">Linear</enum>
+                <key>y</key>
+                <enum type="LibGDXFiltering::Filtering">Linear</enum>
+            </struct>
+        </struct>
+        <key>shapePadding</key>
+        <uint>2</uint>
+        <key>jpgQuality</key>
+        <uint>80</uint>
+        <key>pngOptimizationLevel</key>
+        <uint>1</uint>
+        <key>webpQualityLevel</key>
+        <uint>101</uint>
+        <key>textureSubPath</key>
+        <string></string>
+        <key>textureFormat</key>
+        <enum type="SettingsBase::TextureFormat">png</enum>
+        <key>borderPadding</key>
+        <uint>2</uint>
+        <key>maxTextureSize</key>
+        <QSize>
+            <key>width</key>
+            <int>2048</int>
+            <key>height</key>
+            <int>2048</int>
+        </QSize>
+        <key>fixedTextureSize</key>
+        <QSize>
+            <key>width</key>
+            <int>-1</int>
+            <key>height</key>
+            <int>-1</int>
+        </QSize>
+        <key>reduceBorderArtifacts</key>
+        <false/>
+        <key>algorithmSettings</key>
+        <struct type="AlgorithmSettings">
+            <key>algorithm</key>
+            <enum type="AlgorithmSettings::AlgorithmId">Basic</enum>
+            <key>freeSizeMode</key>
+            <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
+            <key>sizeConstraints</key>
+            <enum type="AlgorithmSettings::SizeConstraints">NPOT</enum>
+            <key>forceSquared</key>
+            <false/>
+            <key>forceWordAligned</key>
+            <false/>
+            <key>maxRects</key>
+            <struct type="AlgorithmMaxRectsSettings">
+                <key>heuristic</key>
+                <enum type="AlgorithmMaxRectsSettings::Heuristic">Best</enum>
+            </struct>
+            <key>basic</key>
+            <struct type="AlgorithmBasicSettings">
+                <key>sortBy</key>
+                <enum type="AlgorithmBasicSettings::SortBy">Name</enum>
+                <key>order</key>
+                <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
+            </struct>
+        </struct>
+        <key>andEngine</key>
+        <struct type="AndEngine">
+            <key>minFilter</key>
+            <enum type="AndEngine::MinFilter">Linear</enum>
+            <key>packageName</key>
+            <string>Texture</string>
+            <key>wrap</key>
+            <struct type="AndEngineWrap">
+                <key>s</key>
+                <enum type="AndEngineWrap::Wrap">Clamp</enum>
+                <key>t</key>
+                <enum type="AndEngineWrap::Wrap">Clamp</enum>
+            </struct>
+            <key>magFilter</key>
+            <enum type="AndEngine::MagFilter">MagLinear</enum>
+        </struct>
+        <key>dataFileNames</key>
+        <map type="GFileNameMap">
+            <key>data</key>
+            <struct type="DataFile">
+                <key>name</key>
+                <filename>charlotte-sprite.xml</filename>
+            </struct>
+        </map>
+        <key>multiPack</key>
+        <false/>
+        <key>forceIdenticalLayout</key>
+        <false/>
+        <key>outputFormat</key>
+        <enum type="SettingsBase::OutputFormat">RGBA8888</enum>
+        <key>contentProtection</key>
+        <struct type="ContentProtection">
+            <key>key</key>
+            <string></string>
+        </struct>
+        <key>autoAliasEnabled</key>
+        <false/>
+        <key>trimSpriteNames</key>
+        <false/>
+        <key>prependSmartFolderName</key>
+        <false/>
+        <key>cleanTransparentPixels</key>
+        <true/>
+        <key>globalSpriteSettings</key>
+        <struct type="SpriteSettings">
+            <key>scale</key>
+            <double>1</double>
+            <key>scaleMode</key>
+            <enum type="ScaleMode">Smooth</enum>
+            <key>innerPadding</key>
+            <uint>0</uint>
+            <key>extrude</key>
+            <uint>0</uint>
+            <key>trimThreshold</key>
+            <uint>1</uint>
+            <key>trimMode</key>
+            <enum type="SpriteSettings::TrimMode">None</enum>
+            <key>heuristicMask</key>
+            <false/>
+            <key>pivotPoint</key>
+            <enum type="SpriteSettings::PivotPoint">Center</enum>
+        </struct>
+        <key>fileList</key>
+        <array>
+            <filename>Data/charlotte/slice01_01.png</filename>
+            <filename>Data/charlotte/slice02_02.png</filename>
+            <filename>Data/charlotte/slice03_03.png</filename>
+            <filename>Data/charlotte/slice04_04.png</filename>
+            <filename>Data/charlotte/slice05_05.png</filename>
+            <filename>Data/charlotte/slice06_06.png</filename>
+            <filename>Data/charlotte/slice07_07.png</filename>
+            <filename>Data/charlotte/slice08_08.png</filename>
+            <filename>Data/charlotte/slice09_09.png</filename>
+            <filename>Data/charlotte/slice10_10.png</filename>
+            <filename>Data/charlotte/slice11_11.png</filename>
+            <filename>Data/charlotte/slice12_12.png</filename>
+            <filename>Data/charlotte/slice13_13.png</filename>
+            <filename>Data/charlotte/slice14_14.png</filename>
+            <filename>Data/charlotte/slice15_15.png</filename>
+            <filename>Data/charlotte/slice16_16.png</filename>
+            <filename>Data/charlotte/slice17_17.png</filename>
+            <filename>Data/charlotte/slice18_18.png</filename>
+            <filename>Data/charlotte/slice19_19.png</filename>
+            <filename>Data/charlotte/slice20_20.png</filename>
+            <filename>Data/charlotte/slice21_21.png</filename>
+            <filename>Data/charlotte/slice22_22.png</filename>
+            <filename>Data/charlotte/slice23_23.png</filename>
+            <filename>Data/charlotte/slice24_24.png</filename>
+            <filename>Data/charlotte/slice25_25.png</filename>
+            <filename>Data/charlotte/slice26_26.png</filename>
+            <filename>Data/charlotte/slice27_27.png</filename>
+            <filename>Data/charlotte/slice28_28.png</filename>
+            <filename>Data/charlotte/slice29_29.png</filename>
+            <filename>Data/charlotte/slice30_30.png</filename>
+            <filename>Data/charlotte/slice31_31.png</filename>
+            <filename>Data/charlotte/slice32_32.png</filename>
+            <filename>Data/charlotte/slice33_33.png</filename>
+            <filename>Data/charlotte/slice34_34.png</filename>
+            <filename>Data/charlotte/slice35_35.png</filename>
+            <filename>Data/charlotte/slice36_36.png</filename>
+            <filename>Data/charlotte/slice37_37.png</filename>
+            <filename>Data/charlotte/slice38_38.png</filename>
+            <filename>Data/charlotte/slice39_39.png</filename>
+            <filename>Data/charlotte/slice40_40.png</filename>
+            <filename>Data/charlotte/slice41_41.png</filename>
+            <filename>Data/charlotte/slice42_42.png</filename>
+            <filename>Data/charlotte/slice43_43.png</filename>
+            <filename>Data/charlotte/slice44_44.png</filename>
+            <filename>Data/charlotte/slice45_45.png</filename>
+            <filename>Data/charlotte/slice46_46.png</filename>
+            <filename>Data/charlotte/slice47_47.png</filename>
+            <filename>Data/charlotte/slice48_48.png</filename>
+            <filename>Data/charlotte/slice49_49.png</filename>
+            <filename>Data/charlotte/slice50_50.png</filename>
+            <filename>Data/charlotte/slice51_51.png</filename>
+            <filename>Data/charlotte/slice52_52.png</filename>
+            <filename>Data/charlotte/slice53_53.png</filename>
+            <filename>Data/charlotte/slice54_54.png</filename>
+            <filename>Data/charlotte/slice55_55.png</filename>
+            <filename>Data/charlotte/slice56_56.png</filename>
+            <filename>Data/charlotte/slice57_57.png</filename>
+            <filename>Data/charlotte/slice58_58.png</filename>
+            <filename>Data/charlotte/slice59_59.png</filename>
+            <filename>Data/charlotte/slice60_60.png</filename>
+            <filename>Data/charlotte/slice61_61.png</filename>
+            <filename>Data/charlotte/slice62_62.png</filename>
+            <filename>Data/charlotte/slice63_63.png</filename>
+            <filename>Data/charlotte/slice64_64.png</filename>
+            <filename>Data/charlotte/slice65_65.png</filename>
+            <filename>Data/charlotte/slice66_66.png</filename>
+            <filename>Data/charlotte/slice67_67.png</filename>
+            <filename>Data/charlotte/slice68_68.png</filename>
+            <filename>Data/charlotte/slice69_69.png</filename>
+            <filename>Data/charlotte/slice70_70.png</filename>
+            <filename>Data/charlotte/slice71_71.png</filename>
+            <filename>Data/charlotte/slice72_72.png</filename>
+            <filename>Data/charlotte/slice73_73.png</filename>
+            <filename>Data/charlotte/slice74_74.png</filename>
+            <filename>Data/charlotte/slice75_75.png</filename>
+            <filename>Data/charlotte/slice76_76.png</filename>
+            <filename>Data/charlotte/slice77_77.png</filename>
+            <filename>Data/charlotte/slice78_78.png</filename>
+            <filename>Data/charlotte/slice79_79.png</filename>
+            <filename>Data/charlotte/slice80_80.png</filename>
+            <filename>Data/charlotte/slice81_81.png</filename>
+            <filename>Data/charlotte/slice82_82.png</filename>
+            <filename>Data/charlotte/slice83_83.png</filename>
+            <filename>Data/charlotte/slice84_84.png</filename>
+            <filename>Data/charlotte/slice85_85.png</filename>
+            <filename>Data/charlotte/slice86_86.png</filename>
+            <filename>Data/charlotte/slice87_87.png</filename>
+            <filename>Data/charlotte/slice88_88.png</filename>
+            <filename>Data/charlotte/slice89_89.png</filename>
+            <filename>Data/charlotte/slice90_90.png</filename>
+            <filename>Data/charlotte/slice91_91.png</filename>
+            <filename>Data/charlotte/slice92_92.png</filename>
+            <filename>Data/charlotte/slice93_93.png</filename>
+            <filename>Data/charlotte/slice94_94.png</filename>
+            <filename>Data/charlotte/slice95_95.png</filename>
+            <filename>Data/charlotte/slice96_96.png</filename>
+            <filename>Data/charlotte/slice97_97.png</filename>
+            <filename>Data/charlotte/slice98_98.png</filename>
+            <filename>Data/charlotte/slice99_99.png</filename>
+            <filename>Data/charlotte/slice100_100.png</filename>
+            <filename>Data/charlotte/slice101_@.png</filename>
+            <filename>Data/charlotte/slice102_@.png</filename>
+            <filename>Data/charlotte/slice103_@.png</filename>
+            <filename>Data/charlotte/slice104_@.png</filename>
+            <filename>Data/charlotte/slice105_@.png</filename>
+            <filename>Data/charlotte/slice106_@.png</filename>
+            <filename>Data/charlotte/slice107_@.png</filename>
+            <filename>Data/charlotte/slice108_@.png</filename>
+            <filename>Data/charlotte/slice109_@.png</filename>
+            <filename>Data/charlotte/slice110_@.png</filename>
+        </array>
+        <key>ignoreFileList</key>
+        <array/>
+        <key>replaceList</key>
+        <array/>
+        <key>ignoredWarnings</key>
+        <array/>
+        <key>commonDivisorX</key>
+        <uint>1</uint>
+        <key>commonDivisorY</key>
+        <uint>1</uint>
+    </struct>
+</data>
