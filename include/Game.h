@@ -1,11 +1,4 @@
-/*
- *  CGame.h
- *  Main game class
- *
- *  Created by Marcelo Cohen on 05/13.
- *  Copyright 2013 PUCRS. All rights reserved.
- *
- */
+//Nome: Matthias Nunes
 
 #ifndef CGF_GAME_H
 #define CGF_GAME_H

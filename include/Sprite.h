@@ -1,16 +1,7 @@
 #ifndef CGF_SPRITE_H
 #define CGF_SPRITE_H
 
-/*
- *  Sprite.h
- *  Animated sprite class
- *
- *  Created by Marcelo Cohen on 08/13.
- *  Copyright 2013 PUCRS. All rights reserved.
- *
- *  Base on original code at https://github.com/LaurentGomila/SFML/wiki/Source%3A-AnimatedSprite
- *
- */
+//Nome: Matthias Nunes
 
 #include <vector>
 #include <map>

@@ -1,11 +1,4 @@
-/*
- *  Game.cpp
- *  Main game class
- *
- *  Created by Marcelo Cohen on 08/13.
- *  Copyright 2013 PUCRS. All rights reserved.
- *
- */
+//Nome: Matthias Nunes
 
 #include "Game.h"
 #include "GameState.h"

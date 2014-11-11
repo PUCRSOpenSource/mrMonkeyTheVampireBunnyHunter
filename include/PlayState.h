@@ -1,11 +1,4 @@
-/*
- *  PlayState.h
- *  Normal "play" state
- *
- *  Created by Marcelo Cohen on 04/11.
- *  Copyright 2011 PUCRS. All rights reserved.
- *
- */
+//Nome: Matthias Nunes
 
 #ifndef PLAY_STATE_H_
 #define PLAY_STATE_H_
@@ -52,6 +45,7 @@ class PlayState : public cgf::GameState
     bool checkCollision(u_int8_t layer, cgf::Game* game, cgf::Sprite* obj);
 
     int x, y;
+    int speedY;
     int dirx, diry;
     cgf::Sprite player;
     cgf::Sprite enemy;

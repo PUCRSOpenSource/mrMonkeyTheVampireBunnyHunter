@@ -2,6 +2,7 @@
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{amsmath}
 \usepackage{float}
 \usepackage{graphicx}
 
@@ -34,6 +35,11 @@ Esse jogo foi inspirado na série $Castlevania$, tendo como personagem
 controlável a Charlotte. O objetivo principal do jogo é eliminar todos os
 inimigos, sendo essa a condição para passar para a próxima fase. A potuação é
 baseada no número de inimigos mortos e no tempo gasto para passar de uma fase.
+Ela é definida pela seguinte fórmula:
+
+\begin{equation}
+        \frac{numeroDeInimigosMortos \times valorPorInimigo}{tempo}
+\end{equation}
 
 \section{Gameplay}
 
@@ -48,10 +54,10 @@ menu do jogo, e nesse contexto, $K$ confirma enquanto $J$ cancela.
 \subsection{Fase 1}
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=100mm]{map1.png}
-\caption{Fase 1}
-\label{m1}
+        \centering
+        \includegraphics[width=100mm]{map1.png}
+        \caption{Fase 1}
+        \label{m1}
 \end{figure}
 
 Após matar todos os inimigos na fase 1, o jogador é levado à fase dois.
@@ -59,10 +65,10 @@ Após matar todos os inimigos na fase 1, o jogador é levado à fase dois.
 \subsection{Fase 2}
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=100mm]{map2.png}
-\caption{Fase 2}
-\label{m2}
+        \centering
+        \includegraphics[width=100mm]{map2.png}
+        \caption{Fase 2}
+        \label{m2}
 \end{figure}
 
 Após matar todos os inimigos na fase 2, o jogador virou o jogo.
@@ -81,19 +87,19 @@ Após matar todos os inimigos na fase 2, o jogador virou o jogo.
 \subsection{Menu de Pausa}
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=100mm]{pauseMenu.png}
-\caption{Menu de pausa}
-\label{pm}
+        \centering
+        \includegraphics[width=100mm]{pauseMenu.png}
+        \caption{Menu de pausa}
+        \label{pm}
 \end{figure}
 
 \subsection{Tela de Pontuação}
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=100mm]{highScores.png}
-\caption{Pontuação}
-\label{hs}
+        \centering
+        \includegraphics[width=100mm]{highScores.png}
+        \caption{Pontuação}
+        \label{hs}
 \end{figure}
 
 %\section{Requisitos de Audio}

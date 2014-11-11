@@ -1,4 +1,11 @@
-//Nome: Matthias Nunes
+/*
+ *  PlayState.cpp
+ *  Normal "play" state
+ *
+ *  Created by Marcelo Cohen on 08/13.
+ *  Copyright 2013 PUCRS. All rights reserved.
+ *
+ */
 
 #include <iostream>
 #include <cmath>
@@ -15,7 +22,7 @@ void PlayState::init()
     player.loadXML("data/img/charlotte-sprite.xml");
     player.setPosition(50,100);
     player.loadAnimation("data/img/charlotteanim.xml");
-    player.setAnimRate(14);
+    player.setAnimRate(4);
     player.setAnimation("idle");
     player.play();
 
@@ -36,7 +43,7 @@ void PlayState::init()
 
     dirx = 0; // direção do sprite: para a direita (1), esquerda (-1)
     diry = 0;
-    speedY= 0;
+    speedY = 0;
 
     im = cgf::InputManager::instance();
 
@@ -100,12 +107,12 @@ void PlayState::handleEvents(cgf::Game* game)
 
 
 
-    dirx = diry = 0;
+    dirx = 0;
 
     if(im->testEvent("left")) {
         if(player.getXspeed() >= 0) {
-            player.setAnimation("run");
-            player.play();
+            //player.setAnimation("walk-left");
+            //player.play();
         }
         dirx = -1;
     }
@@ -123,8 +130,8 @@ void PlayState::handleEvents(cgf::Game* game)
             //player.setAnimation("walk-up");
             //player.play();
         }
-        if (speedY >= 0)
-                speedY = -300;
+        if(speedY>=0)
+            speedY = -300;
     }
 
     if(im->testEvent("down")) {
@@ -179,18 +186,18 @@ void PlayState::update(cgf::Game* game)
         }
     }
 
-    if (player.bboxCollision(enemy))
-        cout  << "MA - CA - CO" << endl;
+    //if (player.bboxCollision(enemy))
+        //cout << "ohyeah" << endl;
 
-    if (speedY < 400)
-            speedY += 15;
+    if(speedY < 400)
+      speedY+=15;
     if (checkCollision(2, game, &player))
-            speedY = 0; // 3a. camada
+        speedY = 0; // 3a. camada
 
     centerMapOnPlayer();
 }
 
-bool PlayState::checkCollision(u_int8_t layer, cgf::Game* game, cgf::Sprite* obj)
+bool PlayState::checkCollision(uint8_t layer, cgf::Game* game, cgf::Sprite* obj)
 {
     int i, x1, x2, y1, y2;
     bool bump = false;

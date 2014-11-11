@@ -25,6 +25,23 @@ r => 'y' only set if sprite is rotated
     <sprite n="slice07_07.png" x="140" y="2" w="22" h="42" pX="0.5" pY="0.5"/>
     <sprite n="slice08_08.png" x="164" y="2" w="23" h="42" pX="0.5" pY="0.5"/>
     <sprite n="slice09_09.png" x="189" y="2" w="22" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice10_10.png" x="532" y="2" w="23" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="slice12_12.png" x="613" y="2" w="21" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice11_11.png" x="590" y="2" w="21" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice53_53.png" x="244" y="56" w="22" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice13_13.png" x="636" y="2" w="23" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice14_14.png" x="661" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice15_15.png" x="687" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice16_16.png" x="713" y="2" w="25" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice17_17.png" x="740" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice51_51.png" x="196" y="56" w="22" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice55_55.png" x="295" y="56" w="25" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice18_18.png" x="766" y="2" w="23" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice58_58.png" x="375" y="56" w="21" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="slice23_23.png" x="899" y="2" w="19" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice24_24.png" x="920" y="2" w="21" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice45_45.png" x="35" y="56" w="26" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="slice46_46.png" x="63" y="56" w="25" h="42" pX="0.5" pY="0.5"/>
     <sprite n="slice100_100.png" x="213" y="2" w="32" h="44" pX="0.5" pY="0.5"/>
     <sprite n="slice101_@.png" x="247" y="2" w="27" h="48" pX="0.5" pY="0.5"/>
     <sprite n="slice102_@.png" x="276" y="2" w="29" h="44" pX="0.5" pY="0.5"/>
@@ -35,22 +52,11 @@ r => 'y' only set if sprite is rotated
     <sprite n="slice107_@.png" x="443" y="2" w="25" h="26" pX="0.5" pY="0.5"/>
     <sprite n="slice108_@.png" x="470" y="2" w="33" h="26" pX="0.5" pY="0.5"/>
     <sprite n="slice109_@.png" x="505" y="2" w="25" h="28" pX="0.5" pY="0.5"/>
-    <sprite n="slice10_10.png" x="532" y="2" w="23" h="43" pX="0.5" pY="0.5"/>
     <sprite n="slice110_@.png" x="557" y="2" w="31" h="26" pX="0.5" pY="0.5"/>
-    <sprite n="slice11_11.png" x="590" y="2" w="21" h="41" pX="0.5" pY="0.5"/>
-    <sprite n="slice12_12.png" x="613" y="2" w="21" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice13_13.png" x="636" y="2" w="23" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice14_14.png" x="661" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice15_15.png" x="687" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice16_16.png" x="713" y="2" w="25" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice17_17.png" x="740" y="2" w="24" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice18_18.png" x="766" y="2" w="23" h="42" pX="0.5" pY="0.5"/>
     <sprite n="slice19_19.png" x="791" y="2" w="26" h="45" pX="0.5" pY="0.5"/>
     <sprite n="slice20_20.png" x="819" y="2" w="23" h="45" pX="0.5" pY="0.5"/>
     <sprite n="slice21_21.png" x="844" y="2" w="26" h="45" pX="0.5" pY="0.5"/>
     <sprite n="slice22_22.png" x="872" y="2" w="25" h="43" pX="0.5" pY="0.5"/>
-    <sprite n="slice23_23.png" x="899" y="2" w="19" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice24_24.png" x="920" y="2" w="21" h="42" pX="0.5" pY="0.5"/>
     <sprite n="slice25_25.png" x="943" y="2" w="44" h="47" pX="0.5" pY="0.5"/>
     <sprite n="slice26_26.png" x="989" y="2" w="28" h="50" pX="0.5" pY="0.5"/>
     <sprite n="slice27_27.png" x="1019" y="2" w="28" h="43" pX="0.5" pY="0.5"/>
@@ -71,20 +77,14 @@ r => 'y' only set if sprite is rotated
     <sprite n="slice42_42.png" x="1534" y="2" w="44" h="40" pX="0.5" pY="0.5"/>
     <sprite n="slice43_43.png" x="1580" y="2" w="34" h="44" pX="0.5" pY="0.5"/>
     <sprite n="slice44_44.png" x="2" y="56" w="31" h="47" pX="0.5" pY="0.5"/>
-    <sprite n="slice45_45.png" x="35" y="56" w="26" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice46_46.png" x="63" y="56" w="25" h="42" pX="0.5" pY="0.5"/>
     <sprite n="slice47_47.png" x="90" y="56" w="27" h="44" pX="0.5" pY="0.5"/>
     <sprite n="slice48_48.png" x="119" y="56" w="22" h="43" pX="0.5" pY="0.5"/>
     <sprite n="slice49_49.png" x="143" y="56" w="22" h="43" pX="0.5" pY="0.5"/>
     <sprite n="slice50_50.png" x="167" y="56" w="27" h="44" pX="0.5" pY="0.5"/>
-    <sprite n="slice51_51.png" x="196" y="56" w="22" h="41" pX="0.5" pY="0.5"/>
     <sprite n="slice52_52.png" x="220" y="56" w="22" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice53_53.png" x="244" y="56" w="22" h="41" pX="0.5" pY="0.5"/>
     <sprite n="slice54_54.png" x="268" y="56" w="25" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice55_55.png" x="295" y="56" w="25" h="41" pX="0.5" pY="0.5"/>
     <sprite n="slice56_56.png" x="322" y="56" w="26" h="41" pX="0.5" pY="0.5"/>
     <sprite n="slice57_57.png" x="350" y="56" w="23" h="42" pX="0.5" pY="0.5"/>
-    <sprite n="slice58_58.png" x="375" y="56" w="21" h="41" pX="0.5" pY="0.5"/>
     <sprite n="slice59_59.png" x="398" y="56" w="27" h="43" pX="0.5" pY="0.5"/>
     <sprite n="slice60_60.png" x="427" y="56" w="29" h="45" pX="0.5" pY="0.5"/>
     <sprite n="slice61_61.png" x="458" y="56" w="25" h="46" pX="0.5" pY="0.5"/>

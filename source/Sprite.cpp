@@ -1,11 +1,4 @@
-/*
- *  Sprite.cpp
- *  Sprite class
- *
- *  Created by Marcelo Cohen on 04/11.
- *  Copyright 2011 PUCRS. All rights reserved.
- *
- */
+//Nome: Matthias Nunes
 
 #include "Sprite.h"
 #include <iostream>

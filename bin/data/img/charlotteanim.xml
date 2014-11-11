@@ -8,5 +8,6 @@ loop   => looping animation (default)
 -->
 <animation name="charlotte">
     <sequence name="idle"  start="0" end="5" loop="true" />
+    <sequence name="run"  start="6" end="25" loop="true" />
 </animation>
 
