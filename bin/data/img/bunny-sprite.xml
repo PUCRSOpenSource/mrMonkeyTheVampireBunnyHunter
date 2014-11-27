@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3b82bdcab935f2d15cb64e53e508754d:06bbcf5b7473a356f5abe0d5141a97a7:209905ec069aa9dfe4b7ea61dd3ad733$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="bunny-sprite.png" width="842" height="192">
+    <sprite n="dustbunny_die1@2x.png" x="2" y="2" w="208" h="188" pX="0.5" pY="0.5"/>
+    <sprite n="dustbunny_die2@2x.png" x="212" y="2" w="208" h="188" pX="0.5" pY="0.5"/>
+    <sprite n="dustbunny_run1@2x.png" x="422" y="2" w="208" h="188" pX="0.5" pY="0.5"/>
+    <sprite n="dustbunny_run2@2x.png" x="632" y="2" w="208" h="188" pX="0.5" pY="0.5"/>
+</TextureAtlas>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Format:
+name   => name of the animation sequence
+start  => starting frame
+end    => ending frame
+loop   => looping animation (default)
+-->
+<animation name="bunny">
+    <sequence name="die" start="0" end="1" loop="true" />
+    <sequence name="walk"  start="2" end="3" loop="true" />
+</animation>
+

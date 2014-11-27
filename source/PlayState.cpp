@@ -12,22 +12,30 @@ using namespace std;
 
 void PlayState::init()
 {
-    player.loadXML("data/img/charlotte-sprite.xml");
+    /*player.loadXML("data/img/charlotte-sprite.xml");
     player.setPosition(50,100);
     player.loadAnimation("data/img/charlotteanim.xml");
     player.setAnimRate(14);
     player.setAnimation("idle");
+    player.play();*/
+
+    player.loadXML("data/img/monkey.xml");
+    player.setPosition(50,100);
+    player.setScale(0.3, 0.3);
+    player.loadAnimation("data/img/monkeyanim.xml");
+    player.setAnimRate(9);
+    player.setAnimation("idle");
     player.play();
 
-    enemy.loadXML("data/img/monkey.xml");
+    enemy.loadXML("data/img/bunny-sprite.xml");
     enemy.setPosition(100,100);
-    enemy.loadAnimation("data/img/monkeyanim.xml");
-    enemy.setAnimRate(15);
+    enemy.loadAnimation("data/img/bunnyanim.xml");
+    enemy.setAnimRate(4);
     enemy.setScale(0.5, 0.5);
 
     //Start enemy
     enemy.setXspeed(80);
-    enemy.setAnimation("walk-right");
+    enemy.setAnimation("walk");
     enemy.play();
     mirror = false;
 
@@ -95,16 +103,20 @@ void PlayState::handleEvents(cgf::Game* game)
                 game->toggleStats();
     }
 
-
-
-
-
-
     dirx = diry = 0;
+
+    if(im->testEvent("up")) {
+        if(player.getYspeed() >= 0) {
+            //player.setAnimation("arms-up");
+            //player.play();
+        }
+        if (speedY >= 0)
+                speedY = -300;
+    }
 
     if(im->testEvent("left")) {
         if(player.getXspeed() >= 0) {
-            player.setAnimation("run");
+            player.setAnimation("walk-left");
             player.play();
         }
         dirx = -1;
@@ -112,33 +124,24 @@ void PlayState::handleEvents(cgf::Game* game)
     else
     if(im->testEvent("right")) {
         if(player.getXspeed() <= 0) {
-            //player.setAnimation("walk-right");
-            //player.play();
+            player.setAnimation("walk-right");
+            player.play();
         }
         dirx = 1;
     }
 
-    if(im->testEvent("up")) {
-        if(player.getYspeed() >= 0) {
-            //player.setAnimation("walk-up");
-            //player.play();
-        }
-        if (speedY >= 0)
-                speedY = -300;
-    }
-
     if(im->testEvent("down")) {
         if(player.getYspeed() <= 0) {
-            //player.setAnimation("walk-down");
-            //player.play();
+            player.setAnimation("arms-up");
+            player.play();
         }
         diry = 1;
     }
 
     if(!dirx && !diry) // parado?
     {
-        //player.setCurrentFrame(0);
-        //player.pause();
+        player.setCurrentFrame(0);
+        player.pause();
     }
 
     if(im->testEvent("quit") || im->testEvent("rightclick"))
@@ -167,15 +170,17 @@ void PlayState::update(cgf::Game* game)
         mirror = !mirror;
         if (mirror)
         {
-            enemy.setXspeed(80);
-            enemy.setAnimation("walk-right");
+            enemy.setXspeed(180);
+            enemy.setAnimation("walk");
             enemy.play();
         }
         else
         {
-            enemy.setXspeed(-80);
-            enemy.setAnimation("walk-left");
+            enemy.setXspeed(-180);
+            enemy.setAnimation("die");
             enemy.play();
+            //enemy.setCurrentFrame(1);
+            //enemy.pause();
         }
     }
 
