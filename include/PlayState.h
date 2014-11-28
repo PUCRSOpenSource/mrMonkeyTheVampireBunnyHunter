@@ -7,6 +7,7 @@
 #include "Sprite.h"
 #include "InputManager.h"
 #include <MapLoader.h>
+#include <vector>
 
 class PlayState : public cgf::GameState
 {
@@ -49,7 +50,12 @@ class PlayState : public cgf::GameState
     int dirx, diry;
     cgf::Sprite player;
     cgf::Sprite enemy;
-    bool mirror;
+    cgf::Sprite enemy1;
+    cgf::Sprite enemy2;
+    cgf::Sprite enemy3;
+    cgf::Sprite enemy4;
+    cgf::Sprite enemy5;
+    std::vector<cgf::Sprite*> enemies;
     sf::RenderWindow* screen;
     cgf::InputManager* im;
     tmx::MapLoader* map;

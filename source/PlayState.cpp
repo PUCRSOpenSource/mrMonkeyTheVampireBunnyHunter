@@ -31,13 +31,35 @@ void PlayState::init()
     enemy.setPosition(100,100);
     enemy.loadAnimation("data/img/bunnyanim.xml");
     enemy.setAnimRate(4);
-    enemy.setScale(0.5, 0.5);
+    enemy.setScale(0.3, 0.3);
 
     //Start enemy
-    enemy.setXspeed(80);
+    enemy.setXspeed(180);
     enemy.setAnimation("walk");
     enemy.play();
-    mirror = false;
+
+    enemies.push_back(&enemy1);
+    //enemies.push_back(&enemy2);
+    //enemies.push_back(&enemy3);
+    //enemies.push_back(&enemy4);
+    //enemies.push_back(&enemy5);
+
+    for (int i = 0; i < enemies.size(); i++)
+    {
+        enemies[i]->loadXML("data/img/bunny-sprite.xml");
+        enemies[i]->loadAnimation("data/img/bunnyanim.xml");
+        enemies[i]->setAnimRate(4);
+        enemies[i]->setScale(0.2, 0.2);
+        enemies[i]->setXspeed(-180);
+        enemies[i]->setAnimation("walk");
+        enemies[i]->play();
+    }
+
+    enemy1.setPosition(280,210);
+    //enemy2.setPosition(50,50);
+    //enemy3.setPosition(100,100);
+    //enemy4.setPosition(100,100);
+    //enemy5.setPosition(100,100);
 
     map = new tmx::MapLoader("data/maps");
     map->Load("dungeon-tilesets2.tmx");
@@ -165,18 +187,35 @@ void PlayState::handleEvents(cgf::Game* game)
 void PlayState::update(cgf::Game* game)
 {
     screen = game->getScreen();
+
+    for (int i = 0; i < enemies.size(); i++)
+    {
+        if (checkCollision(3, game, enemies[i]))
+        {
+            if (enemies[i]->getXspeed() >= 0)
+            {
+                enemies[i]->setXspeed(-180);
+                enemies[i]->setMirror(false);
+            }
+            else
+            {
+                enemies[i]->setXspeed(180);
+                enemies[i]->setMirror(true);
+            }
+        }
+    }
+
     if (checkCollision(2, game, &enemy))
     {
-        mirror = !mirror;
-        if (mirror)
+        if (enemy.getXspeed() >= 0)
         {
-            enemy.setXspeed(180);
+            enemy.setXspeed(-180);
             enemy.setAnimation("walk");
             enemy.play();
         }
         else
         {
-            enemy.setXspeed(-180);
+            enemy.setXspeed(180);
             enemy.setAnimation("die");
             enemy.play();
             //enemy.setCurrentFrame(1);
@@ -184,8 +223,8 @@ void PlayState::update(cgf::Game* game)
         }
     }
 
-    if (player.bboxCollision(enemy))
-        cout  << "MA - CA - CO" << endl;
+    //if (player.bboxCollision(enemy))
+        //cout  << "MA - CA - CO" << endl;
 
     if (speedY < 400)
             speedY += 15;
@@ -412,6 +451,8 @@ void PlayState::draw(cgf::Game* game)
     map->Draw(*screen, 0);
     screen->draw(player);
     screen->draw(enemy);
+    for (int i = 0; i < enemies.size(); i++)
+        screen->draw(*enemies[i]);
     map->Draw(*screen, 1);
 
     screen->draw(text);

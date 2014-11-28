@@ -4305,11 +4305,12 @@
 	"MenuState.h"
 	"PlayState.h"
 
-1415674004 /home/matthias/Documents/reCastlevania/include/PlayState.h
+1417198538 /home/matthias/Documents/reCastlevania/include/PlayState.h
 	"GameState.h"
 	"Sprite.h"
 	"InputManager.h"
 	<MapLoader.h>
+	<vector>
 
 1379336366 /home/matthias/Documents/reCastlevania/include/tmxloader/MapLoader.h
 	<QuadTreeNode.h>
@@ -4383,10 +4384,15 @@
 1379336368 source:/home/matthias/Documents/reCastlevania/source/tmxloader/QuadTreeNode.cpp
 	<QuadTreeNode.h>
 
-1417114376 source:/home/matthias/Documents/reCastlevania/source/PlayState.cpp
+1417209783 source:/home/matthias/Documents/reCastlevania/source/PlayState.cpp
 	<iostream>
 	<cmath>
 	"Game.h"
 	"PlayState.h"
 	"InputManager.h"
+
+1417123366 source:/home/matthias/Documents/reCastlevania/src/Enemy.cpp
+	"Enemy.h"
+
+1417123484 /home/matthias/Documents/reCastlevania/include/Enemy.h
 
