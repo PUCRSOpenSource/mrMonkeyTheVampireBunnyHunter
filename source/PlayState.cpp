@@ -194,8 +194,16 @@ void PlayState::update(cgf::Game* game)
             }
         }
 
-        if (player.bboxCollision(*enemies[i]) )
-            cout  << "OMG IT'S HITTING ME!" << endl;
+        if (player.bboxCollision(*enemies[i]))
+        {
+            enemies[i]->setXspeed(0);
+            enemies[i]->setAnimation("die");
+            enemies[i]->play();
+            cout << enemies[i]->getPosition().x << endl;
+            if (speedY >= 0)
+                speedY = -300;
+        }
+
     }
 
     centerMapOnPlayer();
