@@ -20,6 +20,12 @@ void PlayState::init()
     player.setAnimation("idle");
     player.play();
 
+    for (int i = 0; i < 5; i++)
+    {
+        cout << deaths[i] << endl;
+        deaths[i] = false;
+    }
+
     enemies.push_back(&enemy1);
     enemies.push_back(&enemy2);
     enemies.push_back(&enemy3);
@@ -173,7 +179,7 @@ void PlayState::update(cgf::Game* game)
     if (speedY < 400)
             speedY += 15;
     if (checkCollision(2, game, &player))
-            speedY = 0; // 3a. camada
+            speedY = 0;
 
     for (int i = 0; i < enemies.size(); i++)
     {
@@ -199,6 +205,7 @@ void PlayState::update(cgf::Game* game)
             enemies[i]->setXspeed(0);
             enemies[i]->setAnimation("die");
             enemies[i]->play();
+            deaths[i] = true;
             cout << enemies[i]->getPosition().x << endl;
             if (speedY >= 0)
                 speedY = -300;
@@ -206,7 +213,18 @@ void PlayState::update(cgf::Game* game)
 
     }
 
+    if (checkDeaths())
+        cout << "OHYEAH I KILLED EVERYONE!" << endl;
+
     centerMapOnPlayer();
+}
+
+bool checkDeaths()
+{
+    for (int i = 0; i < 5; i++)
+        if (deaths[i] == false)
+            return false;
+    return true;
 }
 
 bool PlayState::checkCollision(u_int8_t layer, cgf::Game* game, cgf::Sprite* obj)

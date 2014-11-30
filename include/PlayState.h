@@ -43,11 +43,14 @@ class PlayState : public cgf::GameState
     // Centers the camera on the player position (if player is too close to the borders, stop)
     void centerMapOnPlayer();
 
+    bool checkDeaths();
+
     bool checkCollision(u_int8_t layer, cgf::Game* game, cgf::Sprite* obj);
 
     int x, y;
     int speedY;
     int dirx, diry;
+    int deaths[5];
     cgf::Sprite player;
     cgf::Sprite enemy1;
     cgf::Sprite enemy2;
