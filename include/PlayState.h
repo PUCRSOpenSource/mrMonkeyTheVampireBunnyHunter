@@ -49,7 +49,6 @@ class PlayState : public cgf::GameState
     int speedY;
     int dirx, diry;
     cgf::Sprite player;
-    cgf::Sprite enemy;
     cgf::Sprite enemy1;
     cgf::Sprite enemy2;
     cgf::Sprite enemy3;
