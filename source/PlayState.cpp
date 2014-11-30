@@ -12,13 +12,6 @@ using namespace std;
 
 void PlayState::init()
 {
-    /*player.loadXML("data/img/charlotte-sprite.xml");
-    player.setPosition(50,100);
-    player.loadAnimation("data/img/charlotteanim.xml");
-    player.setAnimRate(14);
-    player.setAnimation("idle");
-    player.play();*/
-
     player.loadXML("data/img/monkey.xml");
     player.setPosition(50,100);
     player.setScale(0.3, 0.3);
@@ -39,7 +32,7 @@ void PlayState::init()
     enemy.play();
 
     enemies.push_back(&enemy1);
-    //enemies.push_back(&enemy2);
+    enemies.push_back(&enemy2);
     //enemies.push_back(&enemy3);
     //enemies.push_back(&enemy4);
     //enemies.push_back(&enemy5);
@@ -50,13 +43,13 @@ void PlayState::init()
         enemies[i]->loadAnimation("data/img/bunnyanim.xml");
         enemies[i]->setAnimRate(4);
         enemies[i]->setScale(0.2, 0.2);
-        enemies[i]->setXspeed(-180);
+        enemies[i]->setXspeed(-100);
         enemies[i]->setAnimation("walk");
         enemies[i]->play();
     }
 
-    enemy1.setPosition(280,210);
-    //enemy2.setPosition(50,50);
+    enemy1.setPosition(280,218);
+    enemy2.setPosition(280,475);
     //enemy3.setPosition(100,100);
     //enemy4.setPosition(100,100);
     //enemy5.setPosition(100,100);
@@ -160,7 +153,7 @@ void PlayState::handleEvents(cgf::Game* game)
         diry = 1;
     }
 
-    if(!dirx && !diry) // parado?
+    if(!dirx && !diry)
     {
         player.setCurrentFrame(0);
         player.pause();
@@ -188,23 +181,6 @@ void PlayState::update(cgf::Game* game)
 {
     screen = game->getScreen();
 
-    for (int i = 0; i < enemies.size(); i++)
-    {
-        if (checkCollision(3, game, enemies[i]))
-        {
-            if (enemies[i]->getXspeed() >= 0)
-            {
-                enemies[i]->setXspeed(-180);
-                enemies[i]->setMirror(false);
-            }
-            else
-            {
-                enemies[i]->setXspeed(180);
-                enemies[i]->setMirror(true);
-            }
-        }
-    }
-
     if (checkCollision(2, game, &enemy))
     {
         if (enemy.getXspeed() >= 0)
@@ -218,8 +194,6 @@ void PlayState::update(cgf::Game* game)
             enemy.setXspeed(180);
             enemy.setAnimation("die");
             enemy.play();
-            //enemy.setCurrentFrame(1);
-            //enemy.pause();
         }
     }
 
@@ -230,6 +204,23 @@ void PlayState::update(cgf::Game* game)
             speedY += 15;
     if (checkCollision(2, game, &player))
             speedY = 0; // 3a. camada
+
+    for (int i = 0; i < enemies.size(); i++)
+    {
+        if (checkCollision(3, game, enemies[i]))
+        {
+            if (enemies[i]->getXspeed() >= 0)
+            {
+                enemies[i]->setXspeed(-100);
+                enemies[i]->setMirror(false);
+            }
+            else
+            {
+                enemies[i]->setXspeed(100);
+                enemies[i]->setMirror(true);
+            }
+        }
+    }
 
     centerMapOnPlayer();
 }
@@ -449,10 +440,10 @@ void PlayState::draw(cgf::Game* game)
     screen->clear(sf::Color(0,0,0));
 
     map->Draw(*screen, 0);
-    screen->draw(player);
     screen->draw(enemy);
     for (int i = 0; i < enemies.size(); i++)
         screen->draw(*enemies[i]);
+    screen->draw(player);
     map->Draw(*screen, 1);
 
     screen->draw(text);
