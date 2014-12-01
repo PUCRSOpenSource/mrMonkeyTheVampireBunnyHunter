@@ -121,7 +121,7 @@ void PlayState::handleEvents(cgf::Game* game)
             //player.play();
         }
         if (speedY >= 0)
-                speedY = -300;
+            speedY = -300;
     }
 
     if(im->testEvent("left")) {
@@ -178,6 +178,7 @@ void PlayState::update(cgf::Game* game)
 
     if (speedY < 400)
             speedY += 15;
+
     if (checkCollision(2, game, &player))
             speedY = 0;
 
@@ -202,13 +203,23 @@ void PlayState::update(cgf::Game* game)
 
         if (player.bboxCollision(*enemies[i]))
         {
-            enemies[i]->setXspeed(0);
-            enemies[i]->setAnimation("die");
-            enemies[i]->play();
-            deaths[i] = true;
-            cout << enemies[i]->getPosition().x << endl;
-            if (speedY >= 0)
+
+            //cout << "Player: (" << player.getPosition().x << ", " << player.getPosition().y + 25 << ")" << endl;
+            //cout << "Enemie: (" << enemies[i]->getPosition().x << ", " << enemies[i]->getPosition().y << ")" << endl;
+            if (player.getPosition().y + 25 < enemies[i]->getPosition().y && speedY >= 0)
+            {
+                //cout << "DEATH" << endl;
+                enemies[i]->setXspeed(0);
+                enemies[i]->setAnimation("die");
+                enemies[i]->play();
+                deaths[i] = true;
+                //cout << "Player: (" << player.getPosition().x << ", " << player.getPosition().y << ")" << endl;
+                //cout << "Enemie: (" << enemies[i]->getPosition().x << ", " << enemies[i]->getPosition().y << ")" << endl;
                 speedY = -300;
+            }
+            else {
+
+            }
         }
 
     }
@@ -219,7 +230,7 @@ void PlayState::update(cgf::Game* game)
     centerMapOnPlayer();
 }
 
-bool checkDeaths()
+bool PlayState::checkDeaths()
 {
     for (int i = 0; i < 5; i++)
         if (deaths[i] == false)
