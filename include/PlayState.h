@@ -47,6 +47,8 @@ class PlayState : public cgf::GameState
 
     bool checkDeaths();
 
+    void reviveBunnies();
+
     int x, y;
     int speedY;
     int dirx, diry;

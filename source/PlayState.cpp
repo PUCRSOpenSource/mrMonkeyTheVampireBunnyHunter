@@ -207,22 +207,20 @@ void PlayState::update(cgf::Game* game)
 
         if (player.bboxCollision(*enemies[i]))
         {
-
-            //cout << "Player: (" << player.getPosition().x << ", " << player.getPosition().y + 25 << ")" << endl;
-            //cout << "Enemie: (" << enemies[i]->getPosition().x << ", " << enemies[i]->getPosition().y << ")" << endl;
             if (player.getPosition().y + 25 < enemies[i]->getPosition().y && speedY >= 0)
             {
-                //cout << "DEATH" << endl;
                 enemies[i]->setXspeed(0);
                 enemies[i]->setAnimation("die");
                 enemies[i]->play();
                 deaths[i] = true;
-                //cout << "Player: (" << player.getPosition().x << ", " << player.getPosition().y << ")" << endl;
-                //cout << "Enemie: (" << enemies[i]->getPosition().x << ", " << enemies[i]->getPosition().y << ")" << endl;
                 speedY = -300;
             }
             else {
-
+                if (deaths[i] == false)
+                {
+                    player.setPosition(50, 700);
+                    reviveBunnies();
+                }
             }
         }
 
@@ -237,6 +235,17 @@ bool PlayState::checkDeaths()
         if (deaths[i] == false)
             return false;
     return true;
+}
+
+void PlayState::reviveBunnies()
+{
+    for (int i = 0; i < 5; i++)
+    {
+        deaths[i] = false;
+        enemies[i]->setXspeed(-100);
+        enemies[i]->setAnimation("walk");
+        enemies[i]->play();
+    }
 }
 
 bool PlayState::checkCollision(u_int8_t layer, cgf::Game* game, cgf::Sprite* obj)
