@@ -26,7 +26,7 @@ using namespace std;
 
 void MenuState::init()
 {
-    menuSprite.load("data/img/menu.png"); // load menu state bitmap
+    menuSprite.load("data/img/menu.png");
     cout << "MenuState Init Successful" << endl;
 }
 
@@ -86,7 +86,7 @@ void MenuState::update(cgf::Game* game)
 
 void MenuState::draw(cgf::Game *game)
 {
-    menuSprite.setPosition(50,50);
+    menuSprite.setPosition(180,100);
 //    menuSprite->draw(game->getScreen());
     game->getScreen()->draw(menuSprite);
 }

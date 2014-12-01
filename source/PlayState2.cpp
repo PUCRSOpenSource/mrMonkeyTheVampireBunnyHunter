@@ -202,8 +202,8 @@ void PlayState2::handleEvents(cgf::Game* game)
 
     if (checkDeaths())
     {
-        game->changeState(MenuState::instance());
         music.stop();
+        game->quit();
     }
 
 }
