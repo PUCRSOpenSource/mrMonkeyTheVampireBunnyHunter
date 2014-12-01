@@ -4,6 +4,7 @@
 #include <cmath>
 #include "Game.h"
 #include "PlayState.h"
+#include "MenuState.h"
 #include "InputManager.h"
 
 PlayState PlayState::m_PlayState;
@@ -116,10 +117,10 @@ void PlayState::handleEvents(cgf::Game* game)
     dirx = diry = 0;
 
     if(im->testEvent("up")) {
-        if(player.getYspeed() >= 0) {
-            //player.setAnimation("arms-up");
-            //player.play();
-        }
+        /*if(player.getYspeed() >= 0) {
+            player.setAnimation("arms-up");
+            player.play();
+        }*/
         if (speedY >= 0)
             speedY = -300;
     }
@@ -170,6 +171,9 @@ void PlayState::handleEvents(cgf::Game* game)
 
     player.setXspeed(dirx*100);
     player.setYspeed(speedY);
+
+    if (checkDeaths())
+        game->changeState(MenuState::instance());
 }
 
 void PlayState::update(cgf::Game* game)
@@ -223,9 +227,6 @@ void PlayState::update(cgf::Game* game)
         }
 
     }
-
-    if (checkDeaths())
-        cout << "OHYEAH I KILLED EVERYONE!" << endl;
 
     centerMapOnPlayer();
 }
