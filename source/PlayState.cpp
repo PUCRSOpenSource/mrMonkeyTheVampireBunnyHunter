@@ -6,6 +6,9 @@
 #include "PlayState.h"
 #include "MenuState.h"
 #include "InputManager.h"
+#include "PlayState2.h"
+
+
 
 PlayState PlayState::m_PlayState;
 
@@ -76,10 +79,25 @@ void PlayState::init()
 
     // select the font
     text.setFont(font);
-    text.setString(L"Teste de texto gráfico");
+    //text.setString(L"Teste de texto gráfico");
     text.setCharacterSize(24); // in pixels, not points!
     text.setColor(sf::Color::Red);
     text.setStyle(sf::Text::Bold | sf::Text::Underlined);
+
+    monkeySoundBuffer.loadFromFile("audio/monkey2.wav");
+    monkeySound.setBuffer(monkeySoundBuffer);
+    monkeySound.setAttenuation(0);
+
+    bunnyDyingBuffer.loadFromFile("audio/horse2.wav");
+    bunnyDying.setBuffer(bunnyDyingBuffer);
+    bunnyDying.setAttenuation(0);
+
+    music.openFromFile("audio/durarara.wav");
+    music.setVolume(80);
+    music.setLoop(true);
+    music.play();
+
+    jumping = false;
 
 	cout << "PlayState Init Successful" << endl;
 }
@@ -117,12 +135,12 @@ void PlayState::handleEvents(cgf::Game* game)
     dirx = diry = 0;
 
     if(im->testEvent("up")) {
-        /*if(player.getYspeed() >= 0) {
-            player.setAnimation("arms-up");
-            player.play();
-        }*/
-        if (speedY >= 0)
-            speedY = -300;
+        if (!jumping)
+        {
+            if (speedY >= 0)
+                speedY = -300;
+            jumping = true;
+        }
     }
 
     if(im->testEvent("left")) {
@@ -173,7 +191,11 @@ void PlayState::handleEvents(cgf::Game* game)
     player.setYspeed(speedY);
 
     if (checkDeaths())
-        game->changeState(MenuState::instance());
+    {
+        game->changeState(PlayState2::instance());
+        music.stop();
+    }
+
 }
 
 void PlayState::update(cgf::Game* game)
@@ -184,7 +206,10 @@ void PlayState::update(cgf::Game* game)
             speedY += 15;
 
     if (checkCollision(2, game, &player))
-            speedY = 0;
+    {
+        speedY = 0;
+        jumping = false;
+    }
 
     for (int i = 0; i < enemies.size(); i++)
     {
@@ -209,15 +234,20 @@ void PlayState::update(cgf::Game* game)
         {
             if (player.getPosition().y + 25 < enemies[i]->getPosition().y && speedY >= 0)
             {
-                enemies[i]->setXspeed(0);
-                enemies[i]->setAnimation("die");
-                enemies[i]->play();
-                deaths[i] = true;
+                if (deaths[i] == false)
+                {
+                    bunnyDying.play();
+                    enemies[i]->setXspeed(0);
+                    enemies[i]->setAnimation("die");
+                    enemies[i]->play();
+                    deaths[i] = true;
+                }
                 speedY = -300;
             }
             else {
                 if (deaths[i] == false)
                 {
+                    monkeySound.play();
                     player.setPosition(50, 700);
                     reviveBunnies();
                 }

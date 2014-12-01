@@ -13,6 +13,7 @@
 #include "InputManager.h"
 #include "MenuState.h"
 #include "PlayState.h"
+#include "PlayState2.h"
 //#include "PlayMap.h"
 //#include "PlayMapTop.h"
 //#include "PlayMapAI.h"

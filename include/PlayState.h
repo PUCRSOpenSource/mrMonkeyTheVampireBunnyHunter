@@ -8,63 +8,73 @@
 #include "InputManager.h"
 #include <MapLoader.h>
 #include <vector>
+#include <SFML/Audio.hpp>
 
 class PlayState : public cgf::GameState
 {
     public:
 
-    void init();
-    void cleanup();
+        void init();
+        void cleanup();
 
-    void pause();
-    void resume();
+        void pause();
+        void resume();
 
-    void handleEvents(cgf::Game* game);
-    void update(cgf::Game* game);
-    void draw(cgf::Game* game);
+        void handleEvents(cgf::Game* game);
+        void update(cgf::Game* game);
+        void draw(cgf::Game* game);
 
-    // Implement Singleton Pattern
-    static PlayState* instance()
-    {
-        return &m_PlayState;
-    }
+        // Implement Singleton Pattern
+        static PlayState* instance()
+        {
+            return &m_PlayState;
+        }
 
     protected:
 
-    PlayState() {}
+        PlayState() {}
 
     private:
 
-    static PlayState m_PlayState;
+        static PlayState m_PlayState;
 
-    // Get a cell GID from the map (x and y are view coords)
-    sf::Uint16 getCellFromMap(u_int8_t layernum, float x, float y);
+        // Get a cell GID from the map (x and y are view coords)
+        sf::Uint16 getCellFromMap(u_int8_t layernum, float x, float y);
 
-    // Centers the camera on the player position (if player is too close to the borders, stop)
-    void centerMapOnPlayer();
+        sf::SoundBuffer monkeySoundBuffer;
+        sf::Sound monkeySound;
 
-    bool checkCollision(u_int8_t layer, cgf::Game* game, cgf::Sprite* obj);
+        sf::SoundBuffer bunnyDyingBuffer;
+        sf::Sound bunnyDying;
 
-    bool checkDeaths();
+        sf::Music music;
 
-    void reviveBunnies();
+        // Centers the camera on the player position (if player is too close to the borders, stop)
+        void centerMapOnPlayer();
 
-    int x, y;
-    int speedY;
-    int dirx, diry;
-    int deaths[5];
-    cgf::Sprite player;
-    cgf::Sprite enemy1;
-    cgf::Sprite enemy2;
-    cgf::Sprite enemy3;
-    cgf::Sprite enemy4;
-    cgf::Sprite enemy5;
-    std::vector<cgf::Sprite*> enemies;
-    sf::RenderWindow* screen;
-    cgf::InputManager* im;
-    tmx::MapLoader* map;
-    sf::Font font;
-    sf::Text text;
+        bool checkCollision(u_int8_t layer, cgf::Game* game, cgf::Sprite* obj);
+
+        bool checkDeaths();
+
+        void reviveBunnies();
+
+        int x, y;
+        int speedY;
+        int dirx, diry;
+        int deaths[5];
+        bool jumping;
+        cgf::Sprite player;
+        cgf::Sprite enemy1;
+        cgf::Sprite enemy2;
+        cgf::Sprite enemy3;
+        cgf::Sprite enemy4;
+        cgf::Sprite enemy5;
+        std::vector<cgf::Sprite*> enemies;
+        sf::RenderWindow* screen;
+        cgf::InputManager* im;
+        tmx::MapLoader* map;
+        sf::Font font;
+        sf::Text text;
 };
 
 #endif
